@@ -49,13 +49,13 @@ class Lessons extends StatelessWidget {
         child: Center(
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.9,
-            height: MediaQuery.of(context).size.height * 0.82,
+            height: MediaQuery.of(context).size.height * 0.9,
             child: ListView.builder(
               itemCount: listLessonProvider.lessons.length,
               itemBuilder: (context, index) {
                 final gradeLesson = lesson[index];
                 return Padding(
-                  padding: const EdgeInsets.only(top: 5, bottom: 5),
+                  padding: const EdgeInsets.only(bottom: 5),
                   child: GestureDetector(
                     child: Container(
                       height: MediaQuery.of(context).size.height * 0.08,

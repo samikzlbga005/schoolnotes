@@ -42,10 +42,11 @@ class _CalculatorState extends State<Calculator> {
         shadowColor: Colors.grey,
       ),
       body: Container(
-        height: MediaQuery.of(context).size.height * 0.8,
         child: Column(
           children: [
-            Flexible(flex: 2, child: resultWidget()),
+            Container(
+              child: resultWidget(),
+            ),
             Expanded(flex: 5, child: _buttons()),
           ],
         ),
@@ -92,7 +93,7 @@ class _CalculatorState extends State<Calculator> {
 
   _myButton(String text) {
     return Container(
-      margin: const EdgeInsets.all(8),
+      margin: const EdgeInsets.all(10),
       child: MaterialButton(
         onPressed: () {
           setState(() {
