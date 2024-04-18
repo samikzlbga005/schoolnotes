@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "182635639091",
+    "project_id": "schoolnotes-ea0cc",
+    "storage_bucket": "schoolnotes-ea0cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182635639091:android:758545896dbf4aef3c4e46",
+        "android_client_info": {
+          "package_name": "com.example.schoolnotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFBbvDipg5ro1lzjIFLcf59nF-TO3f2Yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
