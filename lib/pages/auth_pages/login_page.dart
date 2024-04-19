@@ -96,13 +96,13 @@ class _LoginPageState extends State<LoginPage> {
     if (user != null) {
       loginProvider.getCurrentUser(user.email!);
 
-      showToast(message: "User is successfully signed in");
+      showToast(message: "Başarı İle Giriş Yaptınız");
       Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(builder: (context) => const HomePage()),
           (route) => false);
     } else {
-      showToast(message: "some error occured");
+      showToast(message: "Email Ya da Şifre Hatalı");
     }
   }
 }

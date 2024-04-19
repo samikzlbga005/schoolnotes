@@ -126,7 +126,7 @@ class _SignUpPageState extends State<SignUpPage> {
           MaterialPageRoute(builder: (context) => const HomePage()),
           (route) => false);
     } else {
-      showToast(message: "Some error happend");
+      showToast(message: "Lütfen Alanları Kontrol Edip Yeniden Deneyin");
     }
   }
 }
