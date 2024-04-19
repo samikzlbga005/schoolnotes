@@ -6,6 +6,7 @@ import 'package:schoolnotes/components/toast_message.dart';
 import 'package:schoolnotes/model/User.dart';
 import 'package:schoolnotes/pages/auth_pages/login_page.dart';
 import 'package:schoolnotes/pages/calculator_pages/calculator_page.dart';
+import 'package:schoolnotes/pages/drag_drop.dart';
 import 'package:schoolnotes/pages/my_topics.dart';
 import 'package:schoolnotes/provider/drawer_provider.dart';
 
@@ -41,6 +42,13 @@ Widget drawerHomePage(BuildContext context) {
             Provider.of<DrawerProvider>(context, listen: false).page),
         CustomDrawerButton(context, MyTopics(), "Kaydedilen Notlar",
             Provider.of<DrawerProvider>(context, listen: false).page),
+        ListTile(
+          title: const Text('Kimya Laboratuvarı'),
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SampleDragAndDrop()));
+          },
+        ),
         ListTile(
           title: const Text('Çıkış Yap'),
           onTap: () {

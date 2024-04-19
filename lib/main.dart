@@ -2,6 +2,7 @@ import 'package:schoolnotes/firebase_options.dart';
 import 'package:schoolnotes/pages/auth_pages/login_page.dart';
 import 'package:schoolnotes/pages/home_page.dart';
 import 'package:schoolnotes/pages/splash_screen.dart';
+import 'package:schoolnotes/provider/drag_drop_provider.dart';
 import 'package:schoolnotes/provider/drawer_provider.dart';
 import 'package:schoolnotes/provider/save_topic_provider.dart';
 import 'package:schoolnotes/provider/list_lessons_provider.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => ListLessonsProvider()),
         ChangeNotifierProvider(create: (context) => UserProvider()),
         ChangeNotifierProvider(create: (context) => DrawerProvider()),
+        ChangeNotifierProvider(create: (context) => DragProvider()),
       ],
       child: MaterialApp(
         title: 'Grade App',
